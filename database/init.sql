@@ -4,17 +4,14 @@ DROP SCHEMA IF EXISTS public CASCADE;
 
 CREATE SCHEMA public;
 
-CREATE TABLE public.users(
+CREATE TABLE public.exams(
 id SERIAL PRIMARY KEY,
-tabletest1 VARCHAR(255) NOT NULL,
-tabletest2 VARCHAR(255) NOT NULL,
-);
-
-
-CREATE TABLE public.questions(
-id SERIAL PRIMARY KEY,
-tabletest1 VARCHAR(255) NOT NULL,
-tabletest2 VARCHAR(255) NOT NULL,
+examid VARCHAR(255) NOT NULL,
+examname VARCHAR(255) NOT NULL,
+createddate DATE NOT NULL,
+createdby VARCHAR(255) NOT NULL,
+updateddate DATE NOT NULL,
+updatedby VARCHAR(255) NOT NULL,
 );
 
 COMMIT;
