@@ -1,0 +1,20 @@
+BEGIN;
+
+DROP SCHEMA IF EXISTS public CASCADE;
+
+CREATE SCHEMA public;
+
+CREATE TABLE public.users(
+id SERIAL PRIMARY KEY,
+tabletest1 VARCHAR(255) NOT NULL,
+tabletest2 VARCHAR(255) NOT NULL,
+);
+
+
+CREATE TABLE public.questions(
+id SERIAL PRIMARY KEY,
+tabletest1 VARCHAR(255) NOT NULL,
+tabletest2 VARCHAR(255) NOT NULL,
+);
+
+COMMIT;
