@@ -8,7 +8,7 @@ const dotenv = require('dotenv');
 
 //handlers
 dotenv.config();
-const port = 4000 || process.env.PORT;
+const port = process.env.PORT || 4000;
 const server = express();
 
 //server use
